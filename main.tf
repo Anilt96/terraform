@@ -82,7 +82,7 @@ resource "azurerm_network_interface_security_group_association" "main1" {
 }
 
 resource "azurerm_public_ip" "main1" {
-    name                    = "ip"
+    name                    = "ip1"
     location                = "South India"
     resource_group_name     = azurerm_resource_group.main1.name
     allocation_method       = "Dynamic"
