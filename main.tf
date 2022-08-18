@@ -91,9 +91,9 @@ resource "azurerm_public_ip" "main1" {
 
 resource "azurerm_virtual_machine" "main1" {
     name                              = "vm1"
-    location                          = azurerm_resource_group.main.location
-    resource_group_name               = azurerm_resource_group.main.name
-    network_interface_ids             = [azurerm_network_interface.main.id]
+    location                          = azurerm_resource_group.main1.location
+    resource_group_name               = azurerm_resource_group.main1.name
+    network_interface_ids             = [azurerm_network_interface.main1.id]
     vm_size                           = "Standard_B2ms"
 
     storage_image_reference {
