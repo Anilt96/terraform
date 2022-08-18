@@ -86,7 +86,7 @@ resource "azurerm_public_ip" "main1" {
     location                = "South India"
     resource_group_name     = azurerm_resource_group.main1.name
     allocation_method       = "Dynamic"
-    domain_name_label       = "jenkins"
+    domain_name_label       = "jenkins1"
 }
 
 resource "azurerm_virtual_machine" "main1" {
